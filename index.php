@@ -37,6 +37,11 @@ echo('    <!-- Navigation -->
         <!-- /.container -->
     </nav>');
 
+if (strpos($_GET['site'], 'setup/') !== false) {
+    echo 'unauthorized';
+    die();
+}
+
 if (isset($_GET['site']) && $_GET['site'] != "") {
     include $_GET['site'];
 } else {
@@ -57,5 +62,3 @@ if (isset($_GET['site']) && $_GET['site'] != "") {
 }
 
 echo("</body></html>");
-
-?>

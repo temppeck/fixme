@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "Setting up database"
-mysql --user=che --password=che < create_db.sql
+mysql --user=root --password=root < setup/create_db.sql
 
 echo "Finished..."
