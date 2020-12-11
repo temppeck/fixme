@@ -37,10 +37,6 @@ echo('    <!-- Navigation -->
         <!-- /.container -->
     </nav>');
 
-// if (strpos($_GET['site'], 'setup/') !== false) {
-//     echo 'unauthorized';
-//     die();
-// }
 
 if (strpos($_GET['site'], '.php') === false) {
     echo 'unauthorized non php file';
